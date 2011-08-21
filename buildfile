@@ -3,7 +3,7 @@ require 'buildr/scala'
 
 
 # Version number for this release
-VERSION_NUMBER = "0.0.1"
+VERSION_NUMBER = "0.0.2"
 # Group identifier for your projects
 GROUP = "rara"
 COPYRIGHT = "none"

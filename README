@@ -14,4 +14,4 @@ file you'll need to have buildr installed.
 
 Once you've got it you can add the jar as a dependency to your project and simply import with:
 
-    import rara.Rara._
+    import com.github.oetzi.rara.Rara._
