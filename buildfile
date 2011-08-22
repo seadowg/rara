@@ -3,7 +3,7 @@ require 'buildr/scala'
 
 
 # Version number for this release
-VERSION_NUMBER = "0.0.2"
+VERSION_NUMBER = "0.0.3"
 # Group identifier for your projects
 GROUP = "rara"
 COPYRIGHT = "none"
@@ -19,4 +19,5 @@ define "rara" do
   manifest["Implementation-Vendor"] = COPYRIGHT
   
   package :jar
+  test.using :specs
 end

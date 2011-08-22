@@ -2,6 +2,7 @@ package com.github.oetzi.rara {
 	object Rara {
 		implicit def any2Robj(obj : Any) : Robj = new Robj(obj)
 		implicit def string2Rstring(obj : String) : Rstring = new Rstring(obj)
+		implicit def int2Rint(obj : Int) : Rint = new Rint(obj)
 	}
 
 	class Robj(obj : Any) {
@@ -16,5 +17,12 @@ package com.github.oetzi.rara {
 		def to_d() : Double = obj.toDouble
 		def to_a() : Array[Char] = obj.toArray
 		def to_b() : Boolean = obj.toBoolean
+	}
+	
+	class Rint(obj : Int) {
+		def times(block : Int => Any = { i => null }) : Int = {
+			1.to(obj).foreach { i => block(i) }
+			obj
+		}
 	}
 }
