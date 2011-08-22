@@ -18,7 +18,10 @@ package com.github.oetzi.rara {
 		def to_b() : Boolean = obj.toBoolean
 	}
 	
-	class Rint(int : Int) {
-		
+	class Rint(obj : Int) {
+		def times(block : Int => Any = { i => null }) : Int = {
+			1.to(obj).foreach { i => block(i) }
+			obj
+		}
 	}
 }

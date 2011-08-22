@@ -19,4 +19,5 @@ define "rara" do
   manifest["Implementation-Vendor"] = COPYRIGHT
   
   package :jar
+  test.using :specs
 end
