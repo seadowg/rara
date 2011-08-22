@@ -2,6 +2,7 @@ package com.github.oetzi.rara {
 	object Rara {
 		implicit def any2Robj(obj : Any) : Robj = new Robj(obj)
 		implicit def string2Rstring(obj : String) : Rstring = new Rstring(obj)
+		implicit def int2Rint(obj : Int) : Rint = new Rint(obj)
 	}
 
 	class Robj(obj : Any) {
