@@ -19,5 +19,14 @@ object RintSpec extends Specification {
 			val rint = new Rint(5)
 			(rint times()) mustBe 5
 		}
+		
+		"only return number if obj is negative" in {
+			val rint = new Rint(-5)
+			var side_effect = 0
+			val result = rint times { i => side_effect = side_effect + 1 }
+			
+			result mustBe -5
+			side_effect mustBe 0
+		}
 	} 
 }
