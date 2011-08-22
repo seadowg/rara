@@ -17,4 +17,8 @@ package com.github.oetzi.rara {
 		def to_a() : Array[Char] = obj.toArray
 		def to_b() : Boolean = obj.toBoolean
 	}
+	
+	class Rint(int : Int) {
+		
+	}
 }
