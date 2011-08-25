@@ -15,3 +15,5 @@ file you'll need to have buildr installed.
 Once you've got it you can add the jar as a dependency to your project and simply import with:
 
     import com.github.oetzi.rara.Rara._
+    
+Currently available functions are documented at https://github.com/oetzi/rara/wiki/Functions-Guide
